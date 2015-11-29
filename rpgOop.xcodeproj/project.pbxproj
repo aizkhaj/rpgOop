@@ -16,6 +16,7 @@
 		E0285C771C0AF943007A4BEB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0285C761C0AF943007A4BEB /* Player.swift */; };
 		E0285C791C0AFB48007A4BEB /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0285C781C0AFB48007A4BEB /* Enemy.swift */; };
 		E0285C7B1C0AFCDF007A4BEB /* Kimara.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0285C7A1C0AFCDF007A4BEB /* Kimara.swift */; };
+		E0285C7D1C0B7BA6007A4BEB /* DevilWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0285C7C1C0B7BA6007A4BEB /* DevilWizard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E0285C761C0AF943007A4BEB /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		E0285C781C0AFB48007A4BEB /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		E0285C7A1C0AFCDF007A4BEB /* Kimara.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kimara.swift; sourceTree = "<group>"; };
+		E0285C7C1C0B7BA6007A4BEB /* DevilWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevilWizard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				E0285C761C0AF943007A4BEB /* Player.swift */,
 				E0285C781C0AFB48007A4BEB /* Enemy.swift */,
 				E0285C7A1C0AFCDF007A4BEB /* Kimara.swift */,
+				E0285C7C1C0B7BA6007A4BEB /* DevilWizard.swift */,
 			);
 			path = rpgOop;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				E0285C771C0AF943007A4BEB /* Player.swift in Sources */,
 				E0285C791C0AFB48007A4BEB /* Enemy.swift in Sources */,
+				E0285C7D1C0B7BA6007A4BEB /* DevilWizard.swift in Sources */,
 				E0285C7B1C0AFCDF007A4BEB /* Kimara.swift in Sources */,
 				E0285C751C0AF694007A4BEB /* Character.swift in Sources */,
 				E0285C651C0A8734007A4BEB /* ViewController.swift in Sources */,
