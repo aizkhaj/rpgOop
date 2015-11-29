@@ -22,6 +22,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ww-S1-lud">
+                                <rect key="frame" x="424" y="322" width="167" height="165"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="GpK-YQ-e59"/>
+                                    <constraint firstAttribute="height" constant="165" id="J4y-ml-M7o"/>
+                                </constraints>
+                                <state key="normal" image="chest"/>
+                                <connections>
+                                    <action selector="onChestTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ovi-z3-Hgl"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="FoK-j1-YIT">
                                 <rect key="frame" x="0.0" y="487" width="600" height="113"/>
                                 <animations/>
@@ -61,14 +73,6 @@
                                         <exclude reference="dTE-66-EdE"/>
                                     </mask>
                                 </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chest" translatesAutoresizingMaskIntoConstraints="NO" id="97E-Jw-5JD">
-                                <rect key="frame" x="425" y="321" width="155" height="166"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="166" id="djT-Sa-fYs"/>
-                                    <constraint firstAttribute="width" constant="155" id="hBo-mk-cmh"/>
-                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enem1" translatesAutoresizingMaskIntoConstraints="NO" id="QVk-Uw-aaM">
                                 <rect key="frame" x="387" y="260" width="204" height="277"/>
@@ -129,6 +133,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FoK-j1-YIT" secondAttribute="bottom" id="9E0-Iy-eGy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="C6g-HK-nE5" secondAttribute="trailing" constant="137" id="ASO-GT-Rct"/>
                             <constraint firstItem="OVO-kT-NsB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DFn-8a-QCC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Ww-S1-lud" secondAttribute="trailing" constant="-11" id="ENz-fJ-vih"/>
                             <constraint firstAttribute="trailing" secondItem="mRj-uF-XCT" secondAttribute="trailing" id="EiX-Hs-11j"/>
                             <constraint firstItem="FoK-j1-YIT" firstAttribute="top" secondItem="8Nd-dE-FdB" secondAttribute="bottom" constant="134" id="F5B-lR-piT"/>
                             <constraint firstItem="FoK-j1-YIT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GdT-63-teL"/>
@@ -138,8 +143,8 @@
                             <constraint firstItem="UT0-eC-UEq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="QqV-XF-6ZM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FoK-j1-YIT" secondAttribute="bottom" id="TJ5-Eo-kFI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QVk-Uw-aaM" secondAttribute="bottom" constant="63" id="UdA-FP-lAG"/>
-                            <constraint firstAttribute="trailing" secondItem="97E-Jw-5JD" secondAttribute="trailing" constant="20" id="WOc-wO-T4M"/>
                             <constraint firstItem="X8m-Xj-BqN" firstAttribute="centerX" secondItem="OVO-kT-NsB" secondAttribute="centerX" id="Z5l-tE-gY3"/>
+                            <constraint firstItem="FoK-j1-YIT" firstAttribute="top" secondItem="6Ww-S1-lud" secondAttribute="bottom" id="ZJ7-6j-F9b"/>
                             <constraint firstAttribute="trailing" secondItem="FoK-j1-YIT" secondAttribute="trailing" id="aLA-2K-Khb"/>
                             <constraint firstItem="FoK-j1-YIT" firstAttribute="top" secondItem="UT0-eC-UEq" secondAttribute="bottom" id="cLf-nN-ibZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FoK-j1-YIT" secondAttribute="bottom" id="e75-YN-kAw"/>
@@ -153,7 +158,6 @@
                             <constraint firstItem="OVO-kT-NsB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="s1P-Ra-rQM"/>
                             <constraint firstAttribute="trailing" secondItem="QVk-Uw-aaM" secondAttribute="trailing" constant="7" id="sOn-yw-5iw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mRj-uF-XCT" secondAttribute="bottom" id="tZH-a3-woU"/>
-                            <constraint firstItem="FoK-j1-YIT" firstAttribute="top" secondItem="97E-Jw-5JD" secondAttribute="bottom" id="zf5-wg-F3H"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -170,10 +174,17 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="chestBtn" destination="6Ww-S1-lud" id="JlQ-xz-3BV"/>
+                        <outlet property="enemyHpLbl" destination="C6g-HK-nE5" id="wlf-my-81G"/>
+                        <outlet property="enemyImg" destination="QVk-Uw-aaM" id="BoQ-aE-3Yj"/>
+                        <outlet property="playerHpLbl" destination="8Nd-dE-FdB" id="V2J-ds-4cU"/>
+                        <outlet property="printLbl" destination="X8m-Xj-BqN" id="Z4u-p1-AgG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="393" y="475"/>
+            <point key="canvasLocation" x="264" y="476"/>
         </scene>
     </scenes>
     <resources>
