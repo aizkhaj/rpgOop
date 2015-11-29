@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var chestBtn: UIButton!
     
+    @IBOutlet weak var attackBtn: UIButton!
+    
     var player: Player!
     var enemy: Enemy!
     
@@ -46,6 +48,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onChestTapped(sender: AnyObject) {
+    }
+    
+    @IBAction func attackTapped(sender: AnyObject) {
+        
     }
 
 }

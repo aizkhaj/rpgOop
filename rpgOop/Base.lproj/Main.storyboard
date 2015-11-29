@@ -123,6 +123,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDc-eo-cja">
+                                <rect key="frame" x="477" y="466" width="103" height="114"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="cH9-JI-h3C"/>
+                                    <constraint firstAttribute="width" constant="103" id="ocg-vz-Voe"/>
+                                </constraints>
+                                <state key="normal" image="attack"/>
+                                <connections>
+                                    <action selector="onAttackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsP-bm-DUR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -133,12 +145,14 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FoK-j1-YIT" secondAttribute="bottom" id="9E0-Iy-eGy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="C6g-HK-nE5" secondAttribute="trailing" constant="137" id="ASO-GT-Rct"/>
                             <constraint firstItem="OVO-kT-NsB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DFn-8a-QCC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KDc-eo-cja" secondAttribute="bottom" constant="20" id="Da1-Eq-OSm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6Ww-S1-lud" secondAttribute="trailing" constant="-11" id="ENz-fJ-vih"/>
                             <constraint firstAttribute="trailing" secondItem="mRj-uF-XCT" secondAttribute="trailing" id="EiX-Hs-11j"/>
                             <constraint firstItem="FoK-j1-YIT" firstAttribute="top" secondItem="8Nd-dE-FdB" secondAttribute="bottom" constant="134" id="F5B-lR-piT"/>
                             <constraint firstItem="FoK-j1-YIT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GdT-63-teL"/>
                             <constraint firstItem="8Nd-dE-FdB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="M4y-aY-e85"/>
                             <constraint firstAttribute="trailing" secondItem="QVk-Uw-aaM" secondAttribute="trailing" constant="9" id="Nxu-T1-bMp"/>
+                            <constraint firstItem="KDc-eo-cja" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Odd-5U-JIB"/>
                             <constraint firstAttribute="trailing" secondItem="FoK-j1-YIT" secondAttribute="trailing" id="PuO-ZN-aLP"/>
                             <constraint firstItem="UT0-eC-UEq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="QqV-XF-6ZM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FoK-j1-YIT" secondAttribute="bottom" id="TJ5-Eo-kFI"/>
@@ -175,6 +189,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="attackBtn" destination="KDc-eo-cja" id="hwf-Xt-vJb"/>
                         <outlet property="chestBtn" destination="6Ww-S1-lud" id="JlQ-xz-3BV"/>
                         <outlet property="enemyHpLbl" destination="C6g-HK-nE5" id="wlf-my-81G"/>
                         <outlet property="enemyImg" destination="QVk-Uw-aaM" id="BoQ-aE-3Yj"/>
@@ -184,10 +199,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="264" y="476"/>
+            <point key="canvasLocation" x="56" y="437"/>
         </scene>
     </scenes>
     <resources>
+        <image name="attack" width="198" height="223"/>
         <image name="bg" width="768" height="1024"/>
         <image name="chest" width="393" height="440"/>
         <image name="enem1" width="574" height="487"/>
