@@ -21,8 +21,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var chestBtn: UIButton!
     
-    @IBOutlet weak var attackBtn: UIButton!
-    
     var player: Player!
     var enemy: Enemy!
     var chestMessage: String?
@@ -55,8 +53,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func attackTapped(sender: AnyObject) {
+        
         if enemy.attemptAttack(player.attackPwr) {
             printLbl.text = "Attacked \(enemy.type) for \(player.attackPwr) HP"
+            enemyHpLbl.text = "\(enemy.hp) HP"
         } else {
             printLbl.text = "Attack was unsuccessful!"
         }
