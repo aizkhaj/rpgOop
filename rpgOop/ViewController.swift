@@ -32,6 +32,8 @@ class ViewController: UIViewController {
         
         player = Player(name: "DirtyLaundry21", hp: 110, attackPwr: 20)
         
+        generateRandomEnemy()
+        
         playerHpLbl.text = "\(player.hp) HP"
     }
 
@@ -43,6 +45,8 @@ class ViewController: UIViewController {
         } else {
             enemy = DevilWizard(startingHp: 60, attackPwr: 15)
         }
+        
+        enemyImg.hidden = false
     }
     
     @IBAction func onChestTapped(sender: AnyObject) {

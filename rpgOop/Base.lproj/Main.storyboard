@@ -130,8 +130,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDc-eo-cja">
-                                <rect key="frame" x="477" y="466" width="103" height="114"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDc-eo-cja" userLabel="attack">
+                                <rect key="frame" x="490" y="466" width="103" height="114"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="cH9-JI-h3C"/>
@@ -139,7 +139,7 @@
                                 </constraints>
                                 <state key="normal" image="attack"/>
                                 <connections>
-                                    <action selector="attackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ECj-NN-Svt"/>
+                                    <action selector="attackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QfZ-Im-cxd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -159,7 +159,7 @@
                             <constraint firstItem="FoK-j1-YIT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GdT-63-teL"/>
                             <constraint firstItem="8Nd-dE-FdB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="M4y-aY-e85"/>
                             <constraint firstAttribute="trailing" secondItem="QVk-Uw-aaM" secondAttribute="trailing" constant="9" id="Nxu-T1-bMp"/>
-                            <constraint firstItem="KDc-eo-cja" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Odd-5U-JIB"/>
+                            <constraint firstItem="KDc-eo-cja" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="13" id="Odd-5U-JIB"/>
                             <constraint firstAttribute="trailing" secondItem="FoK-j1-YIT" secondAttribute="trailing" id="PuO-ZN-aLP"/>
                             <constraint firstItem="UT0-eC-UEq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="QqV-XF-6ZM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FoK-j1-YIT" secondAttribute="bottom" id="TJ5-Eo-kFI"/>
@@ -205,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21" y="252"/>
+            <point key="canvasLocation" x="-397" y="215"/>
         </scene>
     </scenes>
     <resources>

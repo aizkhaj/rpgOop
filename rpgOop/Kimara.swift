@@ -22,10 +22,10 @@ class Kimara: Enemy {
     
     override func attemptAttack(attackPwr: Int) -> Bool {
         if attackPwr >= IMMUNE_MAX {
-            return super.attemptAttack(attackPwr) //you can use super.# to call parent item..at least in this case
+            return super.attemptAttack(attackPwr)
         } else {
             return false
         }
     }
-    
+     //you can use super.# to call parent item..at least in this case
 }
